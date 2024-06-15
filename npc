@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HiBro : MonoBehaviour
+{
+    public int level = 1;
+    public int lives = 3;
+    public Vector3 newPosition;
+    public int speed = 5;
+    // Start is called before the first frame update
+    void Start()
+    {
+        print(lives = lives + level);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        newPosition = transform.position;
+        newPosition.z += speed * Time.deltaTime;
+        transform.position = newPosition;
+    }
+}
