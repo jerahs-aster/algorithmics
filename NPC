@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HiBro : MonoBehaviour
+public class NPC : MonoBehaviour
 {
     public int level = 1;
     public int lives = 3;
